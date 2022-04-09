@@ -5,12 +5,14 @@
 في هذا المعمل سنتعرف على طريقة عمل المحاكي فقط وسنستخدم برنامج جاهز يمكنك تنزيله [من هنا](Lab1a.asm)
 
 <br>محتويات الدرس:
+<ol dir="rtl">
 <li><a href="#1">ضبط المحاكي</a></li>
 <li><a href="#2">شرح الواجهة</a></li>
 <li><a href="#3">شرح الكود</a></li>
 <li><a href="#4">شرح واجهة الـText Segment</a></li>
 <li><a href="#5">تنفيذ التعليمات</a></li>
 <li><a href="#6">مرجع للاستزادة</a></li>
+</ol>
 <br><br>
 
 --- 
@@ -23,7 +25,7 @@
 
 ستظهر لك نافذة QtSpim Settings
 انتقل لتبويب MIPS
-<ol>
+<ol dir="rtl">
 <li> في قسم MIPS Simulations Settings اختر Simple Machine</li>
 <li> وفي قسم Exception Handler أزل علامة الصح من خيار Load Exception</li>
 </ol>
@@ -54,7 +56,7 @@
  ![QtSpim interface](../Assets/img/QtSpim_interface.jpg "QtSpim interface")
 
 <h3>الواجهة مقسمة إلى ثلاثة أجزاء:</h3>
-<ol>
+<ol dir="rtl">
 <li> <b>Registers frame</b><br></li>
 والتي تحتوي على FP Regs (floating-point unit) و Int Regs[16] سنتجاهل FP Regs وسيكون تركيزنا على Int Regs[16] والتي تحتوي على قيم الأعداد الصحيحة والسجلات الخاصة (registers) في معالج <bdi>MIPS</bdi> (MIPS CPU) <br>
 <small>ملاحظة الرمز [16] يعني أن القيم المعروضة هي بالـHex
@@ -151,7 +153,7 @@ syscall
 توجد طريقتين:
 <br>
 ![Run/Continue & Single Step](../Assets/img/Run.jpg "Run/Continue & Single Step")
-<ol>
+<ol dir="rtl">
 <li>Run/Continue</li>
 تقوم بتشغيل جميع التعليمات حتى نهاية البرنامج أو عند حدوث خطأ
 <li>Single Step</li>
