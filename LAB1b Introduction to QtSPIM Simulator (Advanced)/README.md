@@ -1,5 +1,3 @@
-<head><style>img {background-color: #FFFFFF;}</style></head>
-
 # استدعاء النظام (syscall) وطباعة الرسائل في QtSpim MIPS
 
 سنتعرف في هذا الدرس طريقة طباعة رسالة في الـConsole
