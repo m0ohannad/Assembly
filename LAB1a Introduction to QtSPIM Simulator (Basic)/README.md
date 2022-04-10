@@ -21,7 +21,7 @@
 سنقوم بضبط بعض الإعدادات الرئيسية في المحاكي <br>
 عند تشغيل المحاكي انتقل إلى Simulator في شريط القوائم ثم اختر Settings
 <br>
-![Settings](../Assets/img/Settings.jpg "Simulator > Settings")
+![Settings](../Assets/img/lab1a/Settings.jpg "Simulator > Settings")
 
 ستظهر لك نافذة QtSpim Settings
 انتقل لتبويب MIPS
@@ -30,17 +30,17 @@
 <li> وفي قسم Exception Handler أزل علامة الصح من خيار Load Exception</li>
 </ol>
 
-![QtSpim Settings](../Assets/img/QtSpim_Settings.jpg "MIPS > Simple Machine & Uncheck the “Load Exception Handler”")<br>
+![QtSpim Settings](../Assets/img/lab1a/QtSpim_Settings.jpg "MIPS > Simple Machine & Uncheck the “Load Exception Handler”")<br>
 ثم اضغط موافق (OK)
 
 
 أيضاً انتقل إلى Text Segment وتأكد من تفعيل خيار Instruction Value
 <br>
-![Text Segment](../Assets/img/Text_Segment.jpg "Text Segment > Check the “Instruction Value”")
+![Text Segment](../Assets/img/lab1a/Text_Segment.jpg "Text Segment > Check the “Instruction Value”")
 
 وأخيراً في Data Segment فعل فقط User Data واختر تنسيق Hex (كما موضح بالصورة)
 <br>
-![Data Segment](../Assets/img/Data_Segment.jpg "Data Segment > Only Check the “User Data” & “Hex”")
+![Data Segment](../Assets/img/lab1a/Data_Segment.jpg "Data Segment > Only Check the “User Data” & “Hex”")
 
 
 ---
@@ -49,11 +49,11 @@
 الآن أعد تشغيل المحاكي لتطبيق الإعدادات
 ثم انتقل إلى File واختر Reinitialize and Load File وقم باختيار الملف الذي حملته سابقاً [Lab1a.asm](Lab1a.asm)
  <br>
- ![Reinitialize and Load File](../Assets/img/Reinitialize_and_Load_File.jpg "Reinitialize and Load File")
+ ![Reinitialize and Load File](../Assets/img/lab1a/Reinitialize_and_Load_File.jpg "Reinitialize and Load File")
 
  وستكون الواجهة لديك كالتالي:
  <br>
- ![QtSpim interface](../Assets/img/QtSpim_interface.jpg "QtSpim interface")
+ ![QtSpim interface](../Assets/img/lab1a/QtSpim_interface.jpg "QtSpim interface")
 
 <h3>الواجهة مقسمة إلى ثلاثة أجزاء:</h3>
 <ol dir="rtl">
@@ -76,7 +76,7 @@
 لاحظ أيضاً أنه توجد نافذة منفصلة يتم عرضها وهي نافذة  Console والتي سنستخدمها في المعامل القادمة
 يمكنك إظهارها من قائمة Window في شريط القوائم
 <br>
-![Console](../Assets/img/Console.jpg "Window > Console")
+![Console](../Assets/img/lab1a/Console.jpg "Window > Console")
 
 ---
 ## شرح الكود: <br id=3>
@@ -103,11 +103,11 @@ main:   addi $t1,$zero,97
 تأكد من أن القيمة الافتراضية هي 0x00400000 من أجل تجنب وقوع أخطاء أثناء تشغيل البرنامج
 توجه للقائمة Simulator واختر Run Parameters
 <br>
-![Run Parameters](../Assets/img/Run_Parameters.jpg "Simulator > Run Parameters")
+![Run Parameters](../Assets/img/lab1a/Run_Parameters.jpg "Simulator > Run Parameters")
 
 وتأكد من وضع القيمة 0x00400000 في الخانة Address or label to start running program
 <br>
-![Address or label to start running program](../Assets/img/Address_or_label_to_start_running_program.jpg "Address or label to start running program")
+![Address or label to start running program](../Assets/img/lab1a/Address_or_label_to_start_running_program.jpg "Address or label to start running program")
 
 في السطر الثالث تم وضع عنوان `main` والعنوان يكون متبوع بنقطتين رأسيتين `:` ويمكن وضعه قبل السطر المراد تحديده
 ```
@@ -135,7 +135,7 @@ syscall
 ## شرح واجهة الـText Segment <br id=1>
 يبدو أنك لاحظت وجود أربع أعمدة لكل سطر في الـText Segment 
 <br>
-![Text Segment](../Assets/img/Text_Segment_Tab.jpg "Text Segment")
+![Text Segment](../Assets/img/lab1a/Text_Segment_Tab.jpg "Text Segment")
 
 | العمود الأول  | العمود الثاني | العمود الثالث | العمود الرابع (بعد الفاصلة)
 | :---: | :---: | :---: | :---: | 
@@ -152,7 +152,7 @@ syscall
 
 توجد طريقتين:
 <br>
-![Run/Continue & Single Step](../Assets/img/Run.jpg "Run/Continue & Single Step")
+![Run/Continue & Single Step](../Assets/img/lab1a/Run.jpg "Run/Continue & Single Step")
 <ol dir="rtl">
 <li>Run/Continue</li>
 تقوم بتشغيل جميع التعليمات حتى نهاية البرنامج أو عند حدوث خطأ
@@ -166,11 +166,11 @@ syscall
 
 يمكنك تعيين قيمة مباشرة لسجل معين بالضغط بالزر الفأرة الأيمن واختيار Change Register Contents
 <br>
-![Change Register Contents](../Assets/img/Change_Register_Contents.jpg "Right Click > Change Register Contents")
+![Change Register Contents](../Assets/img/lab1a/Change_Register_Contents.jpg "Right Click > Change Register Contents")
 <br>
  وثم وضع قيمة لها إما بالـHexadecimal أو بالـDecimal
  <br>
-![Change Value](../Assets/img/Change_Value.jpg "Change Value Window")
+![Change Value](../Assets/img/lab1a/Change_Value.jpg "Change Value Window")
 
 ---
 ## مرجع للاستزادة <br id=6>
